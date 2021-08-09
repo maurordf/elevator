@@ -1,0 +1,109 @@
+
+body{
+    margin:0;
+    padding-top: 0;
+    background-color: #eeeeee;
+        *{
+        font-family: 'Roboto', sans-serif;
+        color:#707070;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .display{
+            grid-column: 1/-1;
+            background-color: #fff;
+            box-shadow: 5px 5px 10px -3px #00000050;
+            border-radius: 25px;
+            height: 100px;
+            font-size: 14px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;        
+            align-items: center;
+            margin-bottom: 20px;
+        
+            #txt {
+                text-align: center;
+                font-size: 20px;
+                display: flex;
+            }
+            #floor {
+                text-align: center;
+                font-size: 50px;
+                display: flex;
+            }
+            .icons_display{
+                width: 80px;
+            }
+            .display_txt{
+                flex-direction: column; 
+                align-items: center 
+            }
+            #txt_cancel {
+                display: none; 
+                color: #D03737;
+            }
+            #txt_alarm {
+                display: none; 
+                color: #D03737;
+            }
+            #txt_call {
+                display: none; 
+                color: #232671;
+            }
+            #txt_ok {
+                display: none; 
+                color: #16690F;
+            }
+            #txt_close {
+                display: none; 
+            }
+            #txt_open {
+                display: none; 
+            }
+            #txt_stop {
+                display: none; 
+            }
+        }
+        
+        .board{
+            display: grid;
+            grid-template-columns: repeat(3, 75px);
+            padding: 15px;
+            padding-top: 0px!important;
+
+            button{
+                height: 65px;
+                border:none;
+                cursor: pointer;
+                margin:5px;
+                padding: 0; 
+                border-radius: 32px;
+                background-color: #fff;
+                border-color: #fff;
+                box-shadow: 5px 5px 10px -3px #00000050;
+                font-size: 22px;
+                .icons{
+                    width: 60%;
+                }
+            }
+            button:active{
+                background-color: #d8d8d8;
+            }
+            button:hover{
+                font-weight: 600;
+                box-shadow: none;
+            
+            }
+            button:focus{
+                outline: none;
+            }
+        }
+    }
+}
+
+
+

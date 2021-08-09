@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding-top: 0;
+  background-color: #eeeeee;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .container .display {
+  grid-column: 1/-1;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px -3px #00000050;
+          box-shadow: 5px 5px 10px -3px #00000050;
+  border-radius: 25px;
+  height: 100px;
+  font-size: 14px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+body .container .display #txt {
+  text-align: center;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .display #floor {
+  text-align: center;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .display .icons_display {
+  width: 80px;
+}
+
+body .container .display .display_txt {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .display #txt_cancel {
+  display: none;
+  color: #D03737;
+}
+
+body .container .display #txt_alarm {
+  display: none;
+  color: #D03737;
+}
+
+body .container .display #txt_call {
+  display: none;
+  color: #232671;
+}
+
+body .container .display #txt_ok {
+  display: none;
+  color: #16690F;
+}
+
+body .container .display #txt_close {
+  display: none;
+}
+
+body .container .display #txt_open {
+  display: none;
+}
+
+body .container .display #txt_stop {
+  display: none;
+}
+
+body .container .board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (75px)[3];
+      grid-template-columns: repeat(3, 75px);
+  padding: 15px;
+  padding-top: 0px !important;
+}
+
+body .container .board button {
+  height: 65px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 0;
+  border-radius: 32px;
+  background-color: #fff;
+  border-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px -3px #00000050;
+          box-shadow: 5px 5px 10px -3px #00000050;
+  font-size: 22px;
+}
+
+body .container .board button .icons {
+  width: 60%;
+}
+
+body .container .board button:active {
+  background-color: #d8d8d8;
+}
+
+body .container .board button:hover {
+  font-weight: 600;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .container .board button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */
